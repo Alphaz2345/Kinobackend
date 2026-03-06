@@ -1,6 +1,3 @@
-// ─────────────────────────────────────────────────────────
-// COPY TIL: RestControllers/EmployeeController.java
-// ─────────────────────────────────────────────────────────
 package org.example.kinobackend.Controllers;
 
 import org.example.kinobackend.Model.Employee;
