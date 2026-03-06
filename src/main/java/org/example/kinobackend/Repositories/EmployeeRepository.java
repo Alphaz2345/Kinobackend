@@ -1,6 +1,9 @@
+// ─────────────────────────────────────────────────────────
+// COPY TIL: Repositories/EmployeeRepository.java
+// ─────────────────────────────────────────────────────────
 package org.example.kinobackend.Repositories;
 
-import org.example.kinobackend.Model.Employee;
+import org.example.kinobackend.model.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 

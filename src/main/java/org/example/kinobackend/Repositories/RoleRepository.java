@@ -1,7 +1,7 @@
 
 package org.example.kinobackend.Repositories;
 
-import org.example.kinobackend.Model.Role;
+import org.example.kinobackend.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
