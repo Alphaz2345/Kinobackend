@@ -1,4 +1,4 @@
-package org.example.kinobackend.RestControllers;
+package org.example.kinobackend.Controllers;
 
 public class SeatController {
 }
