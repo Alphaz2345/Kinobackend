@@ -1,4 +1,4 @@
-package org.example.kinobackend.model;
+package org.example.kinobackend.Model;
 
 public class ReservationLog {
 }
