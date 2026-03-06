@@ -1,4 +1,4 @@
-package org.example.kinobackend.dto;
+package org.example.kinobackend.api;
 
 public class CreateReservationRequest {
 }
