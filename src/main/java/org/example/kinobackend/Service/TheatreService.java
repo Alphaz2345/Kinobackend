@@ -1,7 +1,7 @@
 package org.example.kinobackend.Service;
 
-import org.example.kinobackend.Repositories.SeatRepository;
 import org.example.kinobackend.Model.Seat;
+import org.example.kinobackend.Repositories.SeatRepository;
 import org.example.kinobackend.Model.Theatre;
 import org.example.kinobackend.Repositories.TheatreRepository;
 import org.springframework.stereotype.Service;
@@ -45,4 +45,5 @@ public class TheatreService {
             }
         }
     }
+
 }
