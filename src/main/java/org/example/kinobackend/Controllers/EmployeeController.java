@@ -1,7 +1,7 @@
 package org.example.kinobackend.Controllers;
 
-import org.example.kinobackend.Model.Employee;
-import org.example.kinobackend.Service.EmployeeService;
+import org.example.kinobackend.model.Employee;
+import org.example.kinobackend.service.EmployeeService;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
