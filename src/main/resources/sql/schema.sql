@@ -1,6 +1,4 @@
--- ============================================================
--- KINO SYSTEM — DATABASE SCHEMA (MySQL / Workbench)
--- ============================================================
+
 
 CREATE DATABASE IF NOT EXISTS kinodb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE kinodb;
