@@ -1,3 +1,8 @@
 package org.example.kinobackend.model;
-enum ReservationStatus {
+
+public enum ReservationStatus {
+    PENDING,
+    CONFIRMED,
+    CANCELLED,
+    CONVERTED
 }
