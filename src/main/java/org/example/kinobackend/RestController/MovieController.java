@@ -1,4 +1,4 @@
-package org.example.kinobackend.RestControllers;
+package org.example.kinobackend.RestController;
 
 import org.example.kinobackend.model.Movie;
 import org.example.kinobackend.service.MovieService;
