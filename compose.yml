@@ -1,7 +1,9 @@
 services:
+
   db:
     image: mysql:8.0
     container_name: kino-db
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: kino
@@ -9,6 +11,18 @@ services:
       - "3307:3306"
     volumes:
       - mysql-data:/var/lib/mysql
+
+  backend:
+    image: kinobackend
+    container_name: kino-backend
+    depends_on:
+      - db
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/kino
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
 
 volumes:
   mysql-data:

@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KInobackendApplication {
+public class KinobackendApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(KInobackendApplication.class, args);
+        SpringApplication.run(KinobackendApplication.class, args);
     }
 
 }

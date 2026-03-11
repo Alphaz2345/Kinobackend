@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.example</groupId>
-    <artifactId>KInobackend</artifactId>
+    <artifactId>Kinobackend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>KInobackend</name>
-    <description>KInobackend</description>
+    <name>Kinobackend</name>
+    <description>Kinobackend</description>
     <url/>
     <licenses>
         <license/>
