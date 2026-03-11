@@ -40,6 +40,7 @@ public class CustomerService {
         return customer;
     }
 
+
     // Hent kunde
     public Customer getById(int id) {
         return customerRepository.findById(id)

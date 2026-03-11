@@ -33,6 +33,12 @@ public class CustomerController {
         return customerService.login(body.get("email"), body.get("password"));
     }
 
+    //Scrum 54 Log en kunde ud
+    @PostMapping("/logout")
+    public String logout() {
+        return "Customer logged out";
+    }
+
     @GetMapping("/{id}")
     public Customer getCustomer(@PathVariable int id) {
         return customerService.getById(id);
