@@ -1,6 +1,3 @@
-// ─────────────────────────────────────────────────────────
-// COPY TIL: RestControllers/MovieController.java
-// ─────────────────────────────────────────────────────────
 package org.example.kinobackend.RestControllers;
 
 import org.example.kinobackend.model.Movie;

@@ -1,4 +1,4 @@
-package org.example.kinobackend.RestControllers;
+package org.example.kinobackend.RestController;
 
 import org.example.kinobackend.model.Employee;
 import org.example.kinobackend.service.EmployeeService;
@@ -30,12 +30,7 @@ public class EmployeeController {
     }
     @PostMapping
     public Employee createEmployee(@RequestBody Map<String, String> body) {
-        return employeeService.createEmployee(
-           body.get("Fullname"),
-           body.get("email"),
-           body.get("password"),
-           body.get("roleName")
-        );
+        return employeeService.createEmployee(body.get("fullname"), body.get("email"), body.get("role"));
     }
     @GetMapping
     public List<Employee>getAllEmployeesWithRole() {

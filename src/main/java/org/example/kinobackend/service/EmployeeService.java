@@ -32,4 +32,9 @@ public class EmployeeService {
         }
         return employee;
     }
+
+    // Scrum 40
+    public Employee createEmployee(String fullname, String email, String roleName) {
+        return null;
+    }
 }
