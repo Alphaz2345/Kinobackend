@@ -1,4 +1,4 @@
-package org.example.kinobackend.Service;
+package org.example.kinobackend.service;
 
 public class TicketService {
 }
