@@ -47,7 +47,7 @@ public class MovieService {
         existing.setDescription(updated.getDescription());
         existing.setDurationMinutes(updated.getDurationMinutes());
         existing.setAgeLimit(updated.getAgeLimit());
-        existing.setCategory(updated.getCategory());
+        existing.setCategoryId(updated.getCategory());
         existing.setPosterUrl(updated.getPosterUrl());
         return movieRepository.save(existing);
     }
