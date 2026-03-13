@@ -1,4 +1,4 @@
-package org.example.kinobackend.RestController;
+package org.example.kinobackend.controller;
 
 import org.example.kinobackend.model.Showing;
 import org.example.kinobackend.service.ShowingService;
@@ -19,13 +19,13 @@ public class ShowingController {
         this.showingService = showingService;
     }
 
-    // GET /api/showings — alle forestillinger
+    // alle forestillinger
     @GetMapping
     public List<Showing> getAllShowings() {
         return showingService.getAllShowings();
     }
 
-    // GET /api/showings/movie/{movieId} — forestillinger for en film (SCRUM-49)
+    //forestillinger for en film (SCRUM-49)
     @GetMapping("/movie/{movieId}")
     public List<Showing> getByMovie(@PathVariable int movieId) {
         return showingService.getShowingsByMovie(movieId);
@@ -37,7 +37,7 @@ public class ShowingController {
         return showingService.getById(id);
     }
 
-    // POST /api/showings — opret forestilling (SCRUM-15, 16, 18)
+    //opret forestilling (SCRUM-15, 16, 18)
     @PostMapping
     public Showing createShowing(@RequestBody Map<String, Object> body) {
         int movieId = (int) body.get("movieId");
@@ -47,25 +47,25 @@ public class ShowingController {
         return showingService.createShowing(movieId, theatreId, startTime, isExtra);
     }
 
-    // DELETE /api/showings/{id} — aflys forestilling (SCRUM-19)
+    //aflys forestilling (SCRUM-19)
     @DeleteMapping("/{id}")
     public Showing cancelShowing(@PathVariable int id) {
         return showingService.cancelShowing(id);
     }
 
-    // PATCH /api/showings/{id}/start — markér som startet (SCRUM-38)
+    //markér som startet (SCRUM-38)
     @PatchMapping("/{id}/start")
     public Showing markStarted(@PathVariable int id) {
         return showingService.markAsStarted(id);
     }
 
-    // PATCH /api/showings/{id}/move — flyt til anden sal (SCRUM-21)
+    // flyt til anden sal (SCRUM-21)
     @PatchMapping("/{id}/move")
     public Showing moveShowing(@PathVariable int id, @RequestBody Map<String, Integer> body) {
         return showingService.moveToTheatre(id, body.get("theatreId"));
     }
 
-    // GET /api/showings/schedule?theatreId=1&date=2025-06-20 — dagsliste (SCRUM-37)
+    //  dagsliste (SCRUM-37)
     @GetMapping("/schedule")
     public List<Showing> getDailySchedule(
             @RequestParam int theatreId,

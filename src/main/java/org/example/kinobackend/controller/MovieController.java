@@ -1,8 +1,7 @@
-package org.example.kinobackend.RestController;
+package org.example.kinobackend.controller;
 
 import org.example.kinobackend.model.Movie;
 import org.example.kinobackend.service.MovieService;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 

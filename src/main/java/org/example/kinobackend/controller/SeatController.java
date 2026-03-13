@@ -1,4 +1,4 @@
-package org.example.kinobackend.RestController;
+package org.example.kinobackend.controller;
 
 import org.example.kinobackend.Repositories.ReservationSeatRepository;
 import org.example.kinobackend.Repositories.SeatRepository;

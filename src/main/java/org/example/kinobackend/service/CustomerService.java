@@ -63,7 +63,7 @@ public class CustomerService {
         return token;
     }
 
-    // Nulstil adgangskode Scrum 55
+    // Nulstil adgangskode Scrum 5
     public String resetPassword(String token, String newPassword) {
         Customer customer = customerRepository.findByResetToken(token)
                 .orElseThrow(() -> new RuntimeException("Ugyldigt reset-token"));
