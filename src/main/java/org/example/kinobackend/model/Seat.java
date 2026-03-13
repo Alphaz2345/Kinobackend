@@ -14,7 +14,10 @@ public class Seat {
     @JoinColumn(name = "theatre_id")
     private Theatre theatre;
 
+    @Column(name = "row_num")
     private int rowNumber;
+
+    @Column(name = "seat_num")
     private int seatNumber;
 
     public Seat() {}

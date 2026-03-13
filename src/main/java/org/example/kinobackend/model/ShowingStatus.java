@@ -1,4 +1,7 @@
 package org.example.kinobackend.model;
 
-enum ShowingStatus {
+public enum ShowingStatus {
+    SCHEDULED,
+    STARTED,
+    CANCELLED;
 }

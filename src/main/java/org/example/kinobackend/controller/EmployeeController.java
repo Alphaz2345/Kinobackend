@@ -17,23 +17,18 @@ public class EmployeeController {
         this.employeeService = employeeService;
     }
 
-    // alle medarbejdere
     @GetMapping
     public List<Employee> getAllEmployees() {
         return employeeService.getAllEmployees();
     }
 
-    // log ind som medarbejder (SCRUM-59)
     @PostMapping("/login")
     public Employee login(@RequestBody Map<String, String> body) {
         return employeeService.login(body.get("email"), body.get("password"));
     }
+
     @PostMapping
     public Employee createEmployee(@RequestBody Map<String, String> body) {
         return employeeService.createEmployee(body.get("fullname"), body.get("email"), body.get("role"));
-    }
-    @GetMapping
-    public List<Employee>getAllEmployeesWithRole() {
-        return employeeService.getAllEmployees();
     }
 }

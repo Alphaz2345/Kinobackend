@@ -12,7 +12,10 @@ public class Theatre {
     private int id;
 
     private String name;
+
+    @Column(name = "row_count")
     private int rows;
+
     private int seatsPerRow;
     private boolean blocked = false;
     private String blockedReason;

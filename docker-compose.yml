@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:8.0
+    container_name: kino-db
+    environment:
+      MYSQL_ROOT_PASSWORD: Amin2200.
+      MYSQL_DATABASE: kinodb
+    ports:
+      - "3306:3306"
+
+  backend:
+    build: .
+    container_name: kino-backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/kinodb
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: Amin2200.
