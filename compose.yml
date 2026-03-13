@@ -1,5 +1,4 @@
 services:
-
   db:
     image: mysql:8.0
     container_name: kino-db
@@ -13,7 +12,7 @@ services:
       - mysql-data:/var/lib/mysql
 
   backend:
-    image: kinobackend
+    build: .
     container_name: kino-backend
     depends_on:
       - db
