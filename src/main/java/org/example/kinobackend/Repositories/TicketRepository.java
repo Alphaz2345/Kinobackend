@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 import java.util.Optional;
 
-public interface TicketRepository extends JpaRepository<Ticket, Integer> {
+public interface TicketRepository<Ticket> extends JpaRepository<Ticket, Integer> {
 
     // Find billet på unik kode (SCRUM-34, 36)
     Optional<Ticket> findByTicketCode(String ticketCode);
